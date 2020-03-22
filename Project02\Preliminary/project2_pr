@@ -1,1 +1,62 @@
+here are some ideas about the project, they need to be modified in the future
+g = 10 m/s2
+
+M3g=T=M2a=M2*F/(M1+M2+M3)
+therefore F=(M1+M2+M3)/M2 * M3g -> this is the force we need to apply to M1 for keeping M3 from falling(or rising)
+
+
+if force F0 = F(0),the accelaration of M1 is:
+M1ah1+M2ah2+M3ah3=0  (1)
+
+ah1=ah3 and ah2=M3*((g+ah1)/(M2+M3))   (2)
+then we will substitute this (2) to the equation above (1)
+
+(M1+M3)*ah1 + M2 * M3*((g+ah1)/(M2+M3))=0 =>
+
+=> (M1+M3)* ah1= -M2 * M3*((g+ah1)/(M2+M3)) =>
+=> ah1 = -(M2 * M3*((g+ah1)/(M2+M3)))/(M1+M3)
+similarly we can find ah2 and ah3 
+
+(same approach)
+string length is x1-x2+y, 
+and since it is constant the double derivatives d^2x1/dt^2 - d^2x2/dt^2 +d^2y/dt^2 = 0
+
+d^2x1/dt^2 = d^2x3/dt^2 (becouse of the M3 and M1)(was mentioned above)
+M* d^2x1/dt^2 = -F' -T
+M2*x2"=T
+M3* x3"=F'
+expressing x2", x3" and y" in terms of x1"
+ x"1 + (M1+M3)/M2* x1" + g+ (M1+M3)/M3 * x1" =0 =>
+=> x1" = -(M2*M3*g)/(2M2M3 + M1M3 + M1M2 +M3^2)
+--------------------------------------------------------------------------
+
+massRange =(0,10) //in kg
+frictionRange = (0, 0.5) 
+externalHorizontalForceRange = (-300, 300) //in N
+constant g=10 //in m/s2
+
+M1 = random number from massRange
+M2 = random number from massRange
+M3 = random number from massRange
+
+friction1 = random number from frictionRange
+friction2 = random number from frictionRange
+friction3 = random number from frictionRange
+
+externalHorizontalForce = random number from externalHorizontalForceRange
+
+
+
+
+
+
+
+
+                                               
+
+
+
+
+
+
 
