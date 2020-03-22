@@ -46,6 +46,9 @@ friction3 = random number from frictionRange
 externalHorizontalForce = random number from externalHorizontalForceRange
 
 
+there sould be a method for finding the coordinates and the formula should be depend on the F function.
+
+
 
 
 
